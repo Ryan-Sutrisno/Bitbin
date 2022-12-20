@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS `bitbin`;
+
+CREATE DATABASE `bitbin`;
+
+USE `bitbin`;
+
+CREATE TABLE `pastes` (
+    id VARCHAR(50) NOT NULL PRIMARY KEY,
+    content LONGTEXT NOT NULL,
+    syntax VARCHAR(20) NOT NULL
+);
